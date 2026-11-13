@@ -1,0 +1,28 @@
+[project]
+name = "ai-resume-matcher"
+version = "1.0.0"
+description = "AI-Powered Resume & Job Description Matcher using NLP and Scikit-learn TF-IDF"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "AI-Resume-Matcher Team" }
+]
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn>=0.28.0",
+    "python-multipart>=0.0.9",
+    "scikit-learn>=1.4.0",
+    "numpy>=1.26.0",
+    "pypdf>=4.1.0",
+    "reportlab>=4.1.0",
+    "httpx>=0.27.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[tool.uv]
+package = false
