@@ -1,6 +1,5 @@
 @echo off
-echo Starting AI-Resume-Matcher FastAPI Backend via uv...
-cd backend
-uv run python -m uvicorn main:app --reload --host 127.0.0.1 --port 8000
+echo Starting AI-Resume-Matcher FastAPI Backend...
+cd /d "%~dp0\backend"
+uv run --python 3.15 python main.py
 pause
-

@@ -1,6 +1,5 @@
 @echo off
 echo Starting AI-Resume-Matcher React Frontend...
-cd frontend
+cd /d "%~dp0\frontend"
 npm run dev
 pause
-
